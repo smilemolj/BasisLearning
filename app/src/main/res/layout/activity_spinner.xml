@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.sw.day04.SpinnerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".SpinnerActivity">
+
+
+            <TextView
+                android:id="@+id/tv_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请选择一位学员:" />
+
+            <!-- 用android:entries="@array/在strings.xml中定义的字符串数组"实现静态绑定, 不需要在java中绑定数据源给适配器 -->
+            <!-- <Spinner
+                android:id="@+id/sp_edu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:textSize="16sp"
+                /> -->
+
+
+            <!-- 使用SimpleAdapter的Spinner -->
+            <Spinner
+                android:id="@+id/sp_stu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/tv_tip"
+                android:spinnerMode="dialog" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp_stu"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_currHead"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+                <TextView
+                    android:id="@+id/tv_currName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="当前学生姓名" />
+
+                <TextView
+                    android:id="@+id/tv_currSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="当前学生性别" />
+
+                <TextView
+                    android:id="@+id/tv_currBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="当前学生生日" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

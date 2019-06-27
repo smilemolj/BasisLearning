@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".activity.MainActivity">
 
     <com.google.android.flexbox.FlexboxLayout
@@ -19,8 +18,10 @@
         app:justifyContent="flex_start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <include layout="@layout/toolbar" />
 
@@ -28,6 +29,7 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
             android:background="@drawable/pay_ripple_bg"
             android:text="字符串" />
 
@@ -35,6 +37,7 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
             android:background="@drawable/pay_ripple_bg"
             android:text="随机数" />
 
@@ -42,6 +45,7 @@
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
             android:background="@drawable/pay_ripple_bg"
             android:text="日期" />
 
@@ -49,6 +53,7 @@
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
             android:background="@drawable/pay_ripple_bg"
             android:text="日历" />
 
@@ -56,21 +61,72 @@
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
             android:background="@drawable/pay_ripple_bg"
             android:text="List集合" />
+
         <Button
             android:id="@+id/button6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
             android:background="@drawable/pay_ripple_bg"
             android:text="集合" />
 
         <Button
-            android:id="@+id/button666"
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@drawable/pay_ripple_bg"
+            android:text="线程" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@drawable/pay_ripple_bg"
+            android:text="售票" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@drawable/pay_ripple_bg"
+            android:text="单例" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@drawable/pay_ripple_bg"
+            android:text="json解析" />
+
+        <Button
+            android:id="@+id/button11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/login_btn_selector"
-            android:text="跳转1" />
+            android:layout_margin="0.5dp"
+            android:text="选择" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@drawable/login_btn_selector"
+            android:text="填写后补全" />
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@drawable/login_btn_selector"
+            android:text="填写后补全*" />
 
 
     </com.google.android.flexbox.FlexboxLayout>
