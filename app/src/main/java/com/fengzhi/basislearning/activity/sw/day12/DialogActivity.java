@@ -26,6 +26,7 @@ public class DialogActivity extends SlideBackBaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button1:
+                startActivity(AdapterDialogActivity.class,null,false);
                 break;
             case R.id.button2:
                 break;

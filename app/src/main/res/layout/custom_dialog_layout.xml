@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onCustomDialog_Click"
+        android:text="弹个自定义对话框" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="3dp"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/tv_return"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="获取自定义对话框控件的值" />
+
+</LinearLayout>

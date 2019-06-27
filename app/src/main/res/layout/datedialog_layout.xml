@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnChooseBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onChooseDate_Click"
+        android:text="请选择你的生日" />
+
+    <Button
+        android:id="@+id/btnChooseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnChooseBirth"
+        android:onClick="onChooseDate_Click"
+        android:text="请选择你所在地方的时间" />
+
+    <TextView
+        android:id="@+id/tv_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnChooseBirth"
+        android:layout_marginTop="20dp"
+        android:text="xxxxxxxxxxxxxx"
+        android:textColor="@android:color/holo_orange_light" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_birth"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv_birth"
+        android:text="yyyyyyyyyyyyyyy"
+        android:textColor="@android:color/holo_orange_light" />
+
+</RelativeLayout>
