@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setting() {
-        title.setText("java基础学习");
+        title.setText("Android基础学习");
         //禁止横屏
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
