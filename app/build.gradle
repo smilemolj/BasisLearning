@@ -34,4 +34,5 @@ dependencies {
     implementation 'me.imid.swipebacklayout.lib:library:1.1.0'
     implementation "com.jakewharton:butterknife:10.1.0"
     annotationProcessor "com.jakewharton:butterknife-compiler:10.1.0"
+    implementation 'com.google.android:flexbox:1.1.0'
 }

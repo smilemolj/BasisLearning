@@ -1,4 +1,4 @@
-package com.fengzhi.basislearning;
+package com.fengzhi.basislearning.gl;
 /**
  * String
  * 		一个不可变的字符序列，值不变性
@@ -7,7 +7,7 @@ package com.fengzhi.basislearning;
  * StringBuilder
  * 		一个可变的字符序列，线程不安全，效率高
  */
-class StringDemo {
+public class StringDemo {
     public static void learn() {
         StringBuffer sb = new StringBuffer("abc");
         System.out.println(sb);

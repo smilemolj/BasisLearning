@@ -1,9 +1,9 @@
-package com.fengzhi.basislearning;
+package com.fengzhi.basislearning.gl;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-class DateDemo {
+public class DateDemo {
     public static void learn() {
         Date date = new Date(679845000);
         System.out.println(date);

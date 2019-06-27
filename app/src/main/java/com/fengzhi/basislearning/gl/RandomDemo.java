@@ -1,8 +1,8 @@
-package com.fengzhi.basislearning;
+package com.fengzhi.basislearning.gl;
 
 import java.util.Random;
 
-class RandomDemo {
+public class RandomDemo {
     public static void learn() {
         Random random = new Random();
         System.out.println(random.nextBoolean());
