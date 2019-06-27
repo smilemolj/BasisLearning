@@ -13,6 +13,7 @@ import com.fengzhi.basislearning.activity.sw.day04.ChooseActivity;
 import com.fengzhi.basislearning.activity.sw.day04.AutocompleteActivity;
 import com.fengzhi.basislearning.activity.sw.day04.SpinnerActivity;
 import com.fengzhi.basislearning.activity.sw.day06.SaveActivity;
+import com.fengzhi.basislearning.activity.sw.day12.DialogActivity;
 import com.fengzhi.basislearning.base.BaseActivity;
 import com.fengzhi.basislearning.gl.day13.CalendarDemo;
 import com.fengzhi.basislearning.gl.day13.DateDemo;
@@ -41,7 +42,7 @@ public class MainActivity extends BaseActivity {
 
     @OnClick({R.id.title_back, R.id.button, R.id.button2, R.id.button3, R.id.button4,
             R.id.button5, R.id.button6, R.id.button7, R.id.button8, R.id.button9, R.id.button10,
-            R.id.button11, R.id.button12, R.id.button13, R.id.button14})
+            R.id.button11, R.id.button12, R.id.button13, R.id.button14, R.id.button15})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.title_back:
@@ -87,6 +88,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.button14:
                 startActivity(new Intent(this, SaveActivity.class));
+                break;
+            case R.id.button15:
+                startActivity(new Intent(this, DialogActivity.class));
                 break;
         }
     }
