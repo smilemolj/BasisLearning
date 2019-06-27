@@ -9,9 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.sw.day04.SpinnerActivity"></activity>
+        <activity android:name=".activity.sw.day06.OtherActivity"></activity>
+        <activity android:name=".activity.sw.day06.SaveActivity" />
+        <activity android:name=".activity.sw.day04.SpinnerActivity" />
         <activity android:name=".activity.sw.day04.AutocompleteActivity" />
-        <activity android:name=".activity.sw.ChooseActivity" />
+        <activity android:name=".activity.sw.day04.ChooseActivity" />
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

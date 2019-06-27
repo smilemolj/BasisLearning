@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.sw.ChooseActivity">
+    tools:context=".activity.sw.day04.ChooseActivity">
 
     <include layout="@layout/toolbar" />
 

@@ -1,4 +1,4 @@
-package com.fengzhi.basislearning.activity.sw;
+package com.fengzhi.basislearning.activity.sw.day04;
 
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
