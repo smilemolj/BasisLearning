@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.sw.day12.NormalDialogActivity"></activity>
+        <activity android:name=".activity.sw.day13.SavePrefsActivity"></activity>
+        <activity android:name=".activity.sw.day12.NormalDialogActivity" />
         <activity android:name=".activity.sw.day12.DateDialogActivity" />
         <activity android:name=".activity.sw.day12.CustomDialogActivity" />
         <activity android:name=".activity.sw.day12.AdapterDialogActivity" />
