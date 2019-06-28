@@ -26,15 +26,16 @@ public class DialogActivity extends SlideBackBaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button1:
-                startActivity(AdapterDialogActivity.class,null,false);
+                startActivity(AdapterDialogActivity.class, null, false);
                 break;
             case R.id.button2:
-                startActivity(CustomDialogActivity.class,null,false);
+                startActivity(CustomDialogActivity.class, null, false);
                 break;
             case R.id.button3:
-                startActivity(DateDialogActivity.class,null,false);
+                startActivity(DateDialogActivity.class, null, false);
                 break;
             case R.id.button4:
+                startActivity(NormalDialogActivity.class, null, false);
                 break;
         }
     }
