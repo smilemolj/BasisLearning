@@ -32,6 +32,7 @@ public class DialogActivity extends SlideBackBaseActivity {
                 startActivity(CustomDialogActivity.class,null,false);
                 break;
             case R.id.button3:
+                startActivity(DateDialogActivity.class,null,false);
                 break;
             case R.id.button4:
                 break;
