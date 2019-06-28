@@ -78,7 +78,7 @@ public class Handler1Activity extends SlideBackBaseActivity {
 
 						tvTime.post(() -> tvTime.setText(result));
 
-            runOnUiThread(() -> tvTime.setText(result));
+//            runOnUiThread(() -> tvTime.setText(result));
         }).start();
     }
 

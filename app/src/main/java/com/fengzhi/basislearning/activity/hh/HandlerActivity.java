@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 
 import com.fengzhi.basislearning.R;
 import com.fengzhi.basislearning.activity.hh.day17.Handler1Activity;
+import com.fengzhi.basislearning.activity.hh.day17.Handler2Activity;
 import com.fengzhi.basislearning.activity.hh.day17.HandlerLoadActivity;
 import com.fengzhi.basislearning.activity.hh.day17.QieHuanActivity;
 import com.fengzhi.basislearning.base.SlideBackBaseActivity;
@@ -119,7 +120,7 @@ public class HandlerActivity extends SlideBackBaseActivity {
 
     }
 
-    @OnClick({R.id.button2, R.id.button3,R.id.button4})
+    @OnClick({R.id.button2, R.id.button3,R.id.button4,R.id.button5})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button2:
@@ -130,6 +131,9 @@ public class HandlerActivity extends SlideBackBaseActivity {
                 break;
             case R.id.button4:
                 startActivity(Handler1Activity.class, null, false);
+                break;
+            case R.id.button5:
+                startActivity(Handler2Activity.class, null, false);
                 break;
         }
 
