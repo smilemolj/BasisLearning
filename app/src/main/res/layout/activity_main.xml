@@ -41,7 +41,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/back_click_bg"
-                android:src="@mipmap/home_more" />
+                android:src="@mipmap/icluanch" />
 
             <TextView
                 android:id="@+id/title"
