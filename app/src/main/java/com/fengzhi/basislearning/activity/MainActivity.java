@@ -40,13 +40,11 @@ public class MainActivity extends BaseActivity {
         title.setText("Android基础学习");
     }
 
-    @OnClick({R.id.title_back, R.id.button, R.id.button2, R.id.button3, R.id.button4,
-            R.id.button5, R.id.button6, R.id.button7, R.id.button8, R.id.button9, R.id.button10,
-            R.id.button11, R.id.button12, R.id.button13, R.id.button14, R.id.button15})
+    @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6,
+            R.id.button7, R.id.button8, R.id.button9, R.id.button10, R.id.button11, R.id.button12
+            , R.id.button13, R.id.button14, R.id.button15})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.title_back:
-                break;
             case R.id.button:
                 StringDemo.learn();
                 break;

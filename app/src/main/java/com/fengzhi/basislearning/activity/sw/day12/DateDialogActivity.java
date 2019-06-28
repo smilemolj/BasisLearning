@@ -47,7 +47,7 @@ public class DateDialogActivity extends SlideBackBaseActivity {
                 //时间选择对话框
                 TimePickerDialog timePickerDialog = new TimePickerDialog(this, (view12, hourOfDay
                         , minute) -> tvTime.setText(hourOfDay + ":" + minute),
-                        calen.get(Calendar.HOUR_OF_DAY), calen.get(Calendar.MINUTE), false);
+                        calen.get(Calendar.HOUR_OF_DAY), calen.get(Calendar.MINUTE), true);
 
                 //显示时间对话框
                 timePickerDialog.show();
