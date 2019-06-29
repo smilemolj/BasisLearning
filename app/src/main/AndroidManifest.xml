@@ -12,7 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.hh.day21.ViewPagerActivity"></activity>
+        <receiver
+            android:name=".activity.hh.day23.MyFirstBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
+        <activity android:name=".activity.hh.day23.DetailActivity" />
+        <activity android:name=".activity.hh.day23.BroNotifaActivity" />
+        <activity android:name=".activity.hh.day21.ViewPagerActivity" />
         <activity android:name=".activity.hh.day17.Handler2Activity" />
         <activity android:name=".activity.hh.day17.Handler1Activity" />
         <activity android:name=".activity.hh.day17.QieHuanActivity" />

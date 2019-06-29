@@ -1,16 +1,19 @@
 package com.fengzhi.basislearning.activity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.core.app.NotificationManagerCompat;
 
 import com.fengzhi.basislearning.R;
 import com.fengzhi.basislearning.activity.hh.day17.HandlerActivity;
 import com.fengzhi.basislearning.activity.hh.day21.ViewPagerActivity;
+import com.fengzhi.basislearning.activity.hh.day23.BroNotifaActivity;
 import com.fengzhi.basislearning.activity.sw.day04.ChooseActivity;
 import com.fengzhi.basislearning.activity.sw.day04.AutocompleteActivity;
 import com.fengzhi.basislearning.activity.sw.day04.SpinnerActivity;
@@ -28,6 +31,8 @@ import com.fengzhi.basislearning.gl.day19.HelloThread;
 import com.fengzhi.basislearning.gl.day19.TestSingle;
 import com.fengzhi.basislearning.gl.day19.Ticket;
 import com.fengzhi.basislearning.th.JsonDemo;
+import com.fengzhi.basislearning.utils.DialogUtil;
+import com.fengzhi.basislearning.utils.IntentUtil;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -37,18 +42,21 @@ public class MainActivity extends BaseActivity {
     @BindView(R.id.title)
     TextView title;
     private long lastClickTime;
+    private boolean areNotificationsEnabled = true;
 
     @Override
     protected void initView(@Nullable Bundle savedInstanceState) {
         title.setText("Android基础学习");
+        checkNotification();
     }
 
     @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6,
             R.id.button7, R.id.button8, R.id.button9, R.id.button10, R.id.button11, R.id.button12
             , R.id.button13, R.id.button14, R.id.button15, R.id.button16, R.id.button17,
-            R.id.button18})
+            R.id.button18, R.id.button19})
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            //<editor-fold desc="点击1">
             case R.id.button:
                 StringDemo.learn();
                 break;
@@ -103,6 +111,10 @@ public class MainActivity extends BaseActivity {
             case R.id.button18:
                 startActivity(new Intent(this, ViewPagerActivity.class));
                 break;
+            //</editor-fold>
+            case R.id.button19:
+                startActivity(new Intent(this, BroNotifaActivity.class));
+                break;
         }
     }
 
@@ -121,6 +133,21 @@ public class MainActivity extends BaseActivity {
             }
         }
     }//双击退出
+
+    private void checkNotification() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            NotificationManagerCompat notificationManagerCompat =
+                    NotificationManagerCompat.from(mContext);
+            areNotificationsEnabled = notificationManagerCompat.areNotificationsEnabled();
+        }
+        if (!areNotificationsEnabled) {
+            DialogUtil.getInstance().showDialog(mContext, "应用未打开通知，请允许", () -> {
+//                    点击确定后跳转到app信息页面，用于设置权限
+                Intent intent = IntentUtil.getAppInfoIntent("com.fengzhi.basislearning");
+                startActivity(intent);
+            });
+        }
+    }
 
     @Override
     protected int getLayoutResId() {
