@@ -214,6 +214,20 @@
             android:layout_margin="0.5dp"
             android:background="@drawable/login_btn_selector"
             android:text="广播和通知" />
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@drawable/login_btn_selector"
+            android:text="百度地图1" />
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@drawable/login_btn_selector"
+            android:text="百度地图2" />
 
 
     </com.google.android.flexbox.FlexboxLayout>
