@@ -227,7 +227,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="0.5dp"
             android:background="@drawable/login_btn_selector"
-            android:text="百度地图2" />
+            android:text="定位" />
 
 
     </com.google.android.flexbox.FlexboxLayout>
