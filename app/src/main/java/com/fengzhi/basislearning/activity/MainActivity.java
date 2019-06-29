@@ -9,7 +9,8 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 
 import com.fengzhi.basislearning.R;
-import com.fengzhi.basislearning.activity.hh.HandlerActivity;
+import com.fengzhi.basislearning.activity.hh.day17.HandlerActivity;
+import com.fengzhi.basislearning.activity.hh.day21.ViewPagerActivity;
 import com.fengzhi.basislearning.activity.sw.day04.ChooseActivity;
 import com.fengzhi.basislearning.activity.sw.day04.AutocompleteActivity;
 import com.fengzhi.basislearning.activity.sw.day04.SpinnerActivity;
@@ -44,7 +45,8 @@ public class MainActivity extends BaseActivity {
 
     @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6,
             R.id.button7, R.id.button8, R.id.button9, R.id.button10, R.id.button11, R.id.button12
-            , R.id.button13, R.id.button14, R.id.button15, R.id.button16, R.id.button17})
+            , R.id.button13, R.id.button14, R.id.button15, R.id.button16, R.id.button17,
+            R.id.button18})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button:
@@ -97,6 +99,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.button17:
                 startActivity(new Intent(this, HandlerActivity.class));
+                break;
+            case R.id.button18:
+                startActivity(new Intent(this, ViewPagerActivity.class));
                 break;
         }
     }

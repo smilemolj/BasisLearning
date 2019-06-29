@@ -12,11 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.hh.day17.Handler2Activity"></activity>
+        <activity android:name=".activity.hh.day21.ViewPagerActivity"></activity>
+        <activity android:name=".activity.hh.day17.Handler2Activity" />
         <activity android:name=".activity.hh.day17.Handler1Activity" />
         <activity android:name=".activity.hh.day17.QieHuanActivity" />
         <activity android:name=".activity.hh.day17.HandlerLoadActivity" />
-        <activity android:name=".activity.hh.HandlerActivity" />
+        <activity android:name=".activity.hh.day17.HandlerActivity" />
         <activity android:name=".activity.sw.day13.SavePrefsActivity" />
         <activity android:name=".activity.sw.day12.NormalDialogActivity" />
         <activity android:name=".activity.sw.day12.DateDialogActivity" />
