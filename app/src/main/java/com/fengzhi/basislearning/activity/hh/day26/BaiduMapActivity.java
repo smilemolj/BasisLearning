@@ -7,7 +7,6 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
-import com.baidu.mapapi.SDKInitializer;
 import com.baidu.mapapi.map.BaiduMap;
 import com.baidu.mapapi.map.BitmapDescriptor;
 import com.baidu.mapapi.map.BitmapDescriptorFactory;
@@ -18,14 +17,10 @@ import com.baidu.mapapi.map.Marker;
 import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.map.OverlayOptions;
 import com.baidu.mapapi.model.LatLng;
-import com.fengzhi.basislearning.App;
 import com.fengzhi.basislearning.R;
-import com.fengzhi.basislearning.activity.MainActivity;
 import com.fengzhi.basislearning.base.BaseActivity;
-import com.fengzhi.basislearning.base.SlideBackBaseActivity;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class BaiduMapActivity extends BaseActivity {
 

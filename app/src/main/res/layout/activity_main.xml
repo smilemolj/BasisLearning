@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity">
+    tools:context=".MainActivity">
 
     <com.google.android.flexbox.FlexboxLayout
         android:id="@+id/flexboxLayout"
@@ -228,6 +228,13 @@
             android:layout_margin="0.5dp"
             android:background="@drawable/login_btn_selector"
             android:text="定位" />
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@drawable/login_btn_selector"
+            android:text="自定义view" />
 
 
     </com.google.android.flexbox.FlexboxLayout>

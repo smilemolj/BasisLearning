@@ -26,7 +26,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.hh.day26.BaiduMapActivity1"></activity>
+        <activity android:name=".activity.hh.day29.MyViewActivity"></activity>
+        <activity android:name=".activity.hh.day26.BaiduMapActivity1" />
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
@@ -58,7 +59,7 @@
         <activity android:name=".activity.sw.day04.SpinnerActivity" />
         <activity android:name=".activity.sw.day04.AutocompleteActivity" />
         <activity android:name=".activity.sw.day04.ChooseActivity" />
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
