@@ -26,7 +26,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.hh.day30.MyView1Activity"></activity>
+        <activity android:name=".activity.wwj.shopcart.activity.ShoppingCartActivity"></activity>
+        <activity android:name=".activity.wwj.shopcart.activity.GoodsDetailActivity" />
+        <activity android:name=".activity.wwj.ShopActivity" />
+        <activity android:name=".activity.hh.day30.MyView1Activity" />
         <activity android:name=".activity.hh.day29.DrawerActivity" />
         <activity android:name=".activity.hh.day28.MyViewActivity" />
         <activity android:name=".activity.hh.day26.BaiduMapActivity1" />

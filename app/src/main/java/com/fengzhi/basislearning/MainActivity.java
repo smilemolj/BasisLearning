@@ -24,6 +24,7 @@ import com.fengzhi.basislearning.activity.sw.day04.SpinnerActivity;
 import com.fengzhi.basislearning.activity.sw.day06.SaveActivity;
 import com.fengzhi.basislearning.activity.sw.day12.DialogActivity;
 import com.fengzhi.basislearning.activity.sw.day13.SavePrefsActivity;
+import com.fengzhi.basislearning.activity.wwj.ShopActivity;
 import com.fengzhi.basislearning.base.BaseActivity;
 import com.fengzhi.basislearning.gl.day13.CalendarDemo;
 import com.fengzhi.basislearning.gl.day13.DateDemo;
@@ -58,7 +59,7 @@ public class MainActivity extends BaseActivity {
             R.id.button7, R.id.button8, R.id.button9, R.id.button10, R.id.button11, R.id.button12
             , R.id.button13, R.id.button14, R.id.button15, R.id.button16, R.id.button17,
             R.id.button18, R.id.button19, R.id.button20, R.id.button21, R.id.button22,
-            R.id.button23, R.id.button24})
+            R.id.button23, R.id.button24, R.id.button25})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             //<editor-fold desc="点击1">
@@ -134,6 +135,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.button24:
                 startActivity(new Intent(this, MyView1Activity.class));
+                break;
+            case R.id.button25:
+                startActivity(new Intent(this, ShopActivity.class));
                 break;
         }
     }
