@@ -47,7 +47,7 @@ public class BaiduMapActivity extends BaseActivity {
         //通过地图上的一个坐标，构造一个经纬度对象
         LatLng position = new LatLng(30.673295, 104.021145);
         BitmapDescriptor icon = BitmapDescriptorFactory.
-                fromResource(R.mipmap.download);
+                fromResource(R.mipmap.location);
 
         final Bundle bundle = new Bundle();
         bundle.putInt("flag", 1);

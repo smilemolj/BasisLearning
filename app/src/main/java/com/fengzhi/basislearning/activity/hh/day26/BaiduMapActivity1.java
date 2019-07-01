@@ -112,7 +112,7 @@ public class BaiduMapActivity1 extends BaseActivity implements BDLocationListene
             double lng = bdLocation.getLongitude();
             LatLng point = new LatLng(lat,lng);
             BitmapDescriptor descriptor =
-                    BitmapDescriptorFactory.fromResource(R.mipmap.download);
+                    BitmapDescriptorFactory.fromResource(R.mipmap.location);
 
             OverlayOptions options = new MarkerOptions()
                     .position(point)
