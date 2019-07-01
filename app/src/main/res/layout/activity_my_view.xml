@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.hh.day29.MyViewActivity">
+    tools:context=".activity.hh.day28.MyViewActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout11"
@@ -22,17 +22,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.fengzhi.basislearning.activity.hh.day29.DownImg
+            <com.fengzhi.basislearning.activity.hh.day28.DownImg
                 android:id="@+id/img"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher" />
 
-            <com.fengzhi.basislearning.activity.hh.day29.CustomView
+            <com.fengzhi.basislearning.activity.hh.day28.CustomView
                 android:id="@+id/cv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/img"></com.fengzhi.basislearning.activity.hh.day29.CustomView>
+                android:layout_below="@id/img"></com.fengzhi.basislearning.activity.hh.day28.CustomView>
 
             <Button
                 android:layout_width="wrap_content"
@@ -42,11 +42,11 @@
                 android:onClick="btnSure"
                 android:text="确定购买" />
 
-            <com.fengzhi.basislearning.activity.hh.day29.BannerView
+            <com.fengzhi.basislearning.activity.hh.day28.BannerView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_below="@id/cv"
-                android:background="#5ccc"></com.fengzhi.basislearning.activity.hh.day29.BannerView>
+                android:background="#5ccc"></com.fengzhi.basislearning.activity.hh.day28.BannerView>
         </RelativeLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

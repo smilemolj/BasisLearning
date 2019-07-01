@@ -1,8 +1,7 @@
-package com.fengzhi.basislearning.activity.hh.day30;
+package com.fengzhi.basislearning.activity.hh.day29;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -17,7 +16,6 @@ import com.fengzhi.basislearning.R;
 import com.fengzhi.basislearning.base.BaseActivity;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class DrawerActivity extends BaseActivity {
