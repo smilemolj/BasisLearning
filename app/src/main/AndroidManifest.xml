@@ -26,7 +26,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.hh.day29.MyViewActivity"></activity>
+        <activity android:name=".activity.hh.day30.DrawerActivity"></activity>
+        <activity android:name=".activity.hh.day29.MyViewActivity" />
         <activity android:name=".activity.hh.day26.BaiduMapActivity1" />
 
         <meta-data

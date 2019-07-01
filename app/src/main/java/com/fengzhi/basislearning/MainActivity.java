@@ -16,6 +16,7 @@ import com.fengzhi.basislearning.activity.hh.day23.BroNotifaActivity;
 import com.fengzhi.basislearning.activity.hh.day26.BaiduMapActivity;
 import com.fengzhi.basislearning.activity.hh.day26.BaiduMapActivity1;
 import com.fengzhi.basislearning.activity.hh.day29.MyViewActivity;
+import com.fengzhi.basislearning.activity.hh.day30.DrawerActivity;
 import com.fengzhi.basislearning.activity.sw.day04.AutocompleteActivity;
 import com.fengzhi.basislearning.activity.sw.day04.ChooseActivity;
 import com.fengzhi.basislearning.activity.sw.day04.SpinnerActivity;
@@ -55,7 +56,8 @@ public class MainActivity extends BaseActivity {
     @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6,
             R.id.button7, R.id.button8, R.id.button9, R.id.button10, R.id.button11, R.id.button12
             , R.id.button13, R.id.button14, R.id.button15, R.id.button16, R.id.button17,
-            R.id.button18, R.id.button19, R.id.button20, R.id.button21, R.id.button22})
+            R.id.button18, R.id.button19, R.id.button20, R.id.button21, R.id.button22,
+            R.id.button23})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             //<editor-fold desc="点击1">
@@ -125,6 +127,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.button22:
                 startActivity(new Intent(this, MyViewActivity.class));
+                break;
+            case R.id.button23:
+                startActivity(new Intent(this, DrawerActivity.class));
                 break;
         }
     }
