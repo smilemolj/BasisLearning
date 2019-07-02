@@ -58,18 +58,10 @@ public class ShoppingCartActivity extends AppCompatActivity {
 
     public void setListener() {
 
-        myAdapter.setOnItemCheckedListener(new OnItemCheckedListener() {
-            @Override
-            public void onItemCheckedListener(CheckBox checkBox, int pos) {
-                ItemChecked(checkBox, pos);
-            }
-        });
-        myAdapter.setOnNumAscListener(new OnNumAscListener() {
-            @Override
-            public void onNumAscListener() {
-                //更新数据库中的num数量刷新，
+        myAdapter.setOnItemCheckedListener((checkBox, pos) -> ItemChecked(checkBox, pos));
+        myAdapter.setOnNumAscListener(() -> {
+            //更新数据库中的num数量刷新，
 
-            }
         });
 
         myAdapter.setOnNumDescListener(new OnNumDescListener() {
